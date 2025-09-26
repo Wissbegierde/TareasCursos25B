@@ -1,0 +1,31 @@
+============================================================
+REPORTE DE CALIBRACIÓN DE SENSORES IoT - PM2.5
+============================================================
+
+INFORMACIÓN DE DATOS:
+- Puntos de referencia: 200
+- Puntos del sensor: 200
+- Rango temporal referencia: 0.00 - 24.00 horas
+- Rango temporal sensor: 0.00 - 24.00 horas
+
+ANÁLISIS DE DISTANCIA EUCLIDIANA:
+- Distancia euclidiana (ventana 5.0h): 2.1123
+
+OPTIMIZACIÓN DE VENTANA MÓVIL:
+- Mejor ventana: 5.00 horas
+- Menor distancia: 2.1123
+
+AJUSTE LINEAL:
+- Ecuación: y = 0.7966x + 1.9794
+- R²: 0.9993
+- RMSE: 0.1469
+- P-valor: 0.000000
+
+ALCANCE DE VALIDEZ:
+- Tolerancia: 15.0%
+- Puntos válidos: 100/100
+- Porcentaje válido: 100.0%
+- Error promedio: 0.0235
+- Error máximo: 0.0848
+
+============================================================
