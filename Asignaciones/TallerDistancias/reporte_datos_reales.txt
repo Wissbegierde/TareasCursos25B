@@ -1,0 +1,6 @@
+======================================================================
+TALLER DE DISTANCIAS - ANÁLISIS CON DATOS REALES
+======================================================================
+Cargando datos de referencia (Estaciones AMB)...
+Error cargando datos de referencia: [Errno 2] No such file or directory: 'DatosDistancias/Datos Estaciones AMB.xlsx'
+Error: No se pudieron cargar datos de referencia

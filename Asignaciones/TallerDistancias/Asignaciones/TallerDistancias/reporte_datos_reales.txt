@@ -1,0 +1,147 @@
+======================================================================
+TALLER DE DISTANCIAS - ANÁLISIS CON DATOS REALES
+======================================================================
+Cargando datos de referencia (Estaciones AMB)...
+Archivo Excel cargado: (8040, 11)
+Columnas disponibles: ['Date&Time', 'ug/m3', 'ug/m3.1', 'ug/m3.2', 'ug/m3.3', 'C', 'mm', '%', 'grados', 'm/s', 'W/m2']
+
+Primeras 5 filas del archivo Excel:
+            Date&Time   ug/m3 ug/m3.1 ug/m3.2 ug/m3.3       C      mm       %  grados     m/s    W/m2
+0 2018-10-01 00:00:00  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData
+1 2018-10-01 01:00:00  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData
+2 2018-10-01 02:00:00  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData
+3 2018-10-01 03:00:00  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData
+4 2018-10-01 04:00:00  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData  NoData
+
+Datos de referencia procesados: 5824 puntos
+Rango temporal: 2019-01-01 00:00:00+00:00 - 2019-08-31 23:00:00+00:00
+Rango de PM2.5: 1.60 - 66.90 μg/m³
+Promedio PM2.5: 16.62 μg/m³
+
+Cargando datos del sensor IoT (archivos CSV)...
+Encontrados 7 archivos CSV del sensor IoT
+  Procesando: mediciones_clg_normalsup_pm25_a_2018-11-01T00_00_00_2018-11-30T23_59_59.csv
+  Procesando: mediciones_clg_normalsup_pm25_a_2018-12-01T00_00_00_2018-12-31T23_59_59.csv
+  Procesando: mediciones_clg_normalsup_pm25_a_2019-04-01T00_00_00_2019-04-30T23_59_59.csv
+    - 397 puntos de PM2.5 (2019+)
+  Procesando: mediciones_clg_normalsup_pm25_a_2019-05-01T00_00_00_2019-05-31T23_59_59.csv
+    - 750 puntos de PM2.5 (2019+)
+  Procesando: mediciones_clg_normalsup_pm25_a_2019-06-01T00_00_00_2019-06-30T23_59_59.csv
+    - 706 puntos de PM2.5 (2019+)
+  Procesando: mediciones_clg_normalsup_pm25_a_2019-07-01T00_00_00_2019-07-31T23_59_59.csv
+    - 749 puntos de PM2.5 (2019+)
+  Procesando: mediciones_clg_normalsup_pm25_a_2019-08-01T00_00_00_2019-08-31T23_59_59.csv
+    - 745 puntos de PM2.5 (2019+)
+
+Total de datos del sensor IoT: 3347 puntos
+Rango temporal: 2019-04-11 17:29:20.949000+00:00 - 2019-09-01 04:03:01.820000+00:00
+Rango de PM2.5: 0.00 - 56.00 μg/m³
+Promedio PM2.5: 14.64 μg/m³
+
+Preparando datos para calibración (sincronizados por tiempo real)...
+Datos de referencia (Estaciones AMB): 547 puntos
+Datos del sensor IoT (a calibrar): 547 puntos
+
+==================================================
+REALIZANDO ANÁLISIS DE CALIBRACIÓN
+==================================================
+
+1. Análisis de distancia euclidiana...
+  Ventana: 0.50h, Distancia: 9.9320
+  Ventana: 0.79h, Distancia: 9.9320
+  Ventana: 1.08h, Distancia: 9.9320
+  Ventana: 1.37h, Distancia: 9.9320
+  Ventana: 1.66h, Distancia: 9.9320
+  Ventana: 1.95h, Distancia: 9.9320
+  Ventana: 2.24h, Distancia: 9.2105
+  Ventana: 2.53h, Distancia: 9.2105
+  Ventana: 2.82h, Distancia: 9.2105
+  Ventana: 3.11h, Distancia: 9.2105
+  Ventana: 3.39h, Distancia: 9.2105
+  Ventana: 3.68h, Distancia: 9.2105
+  Ventana: 3.97h, Distancia: 9.2105
+  Ventana: 4.26h, Distancia: 8.7488
+  Ventana: 4.55h, Distancia: 8.7488
+  Ventana: 4.84h, Distancia: 8.7488
+  Ventana: 5.13h, Distancia: 8.7488
+  Ventana: 5.42h, Distancia: 8.7488
+  Ventana: 5.71h, Distancia: 8.7488
+  Ventana: 6.00h, Distancia: 8.3890
+
+Mejor ventana: 6.00 horas
+Menor distancia: 8.3890
+
+2. Ajuste lineal (ventana óptima: 6.00h)...
+Ecuación: referencia = 0.4389·IoT + 4.3893
+R²: 0.7144
+RMSE: 2.6369
+
+3. Alcance de validez...
+Tolerancia: 25.0%
+Intervalo válido en IoT: [2.01, 38.10] μg/m³
+Error promedio (válidos): 0.1064
+Error máximo (válidos): 0.2496
+
+4. Generando visualizaciones...
+Gráfico guardado como 'resultados_datos_reales.png'
+
+5. Tamaño mínimo de datos...
+Tamaño mínimo de entrenamiento: 200 pares
+Intervalo válido (validación) IoT: [2.38, 37.89] μg/m³
+
+6. Generando reporte...
+  Ventana: 0.50h, Distancia: 9.9320
+  Ventana: 0.79h, Distancia: 9.9320
+  Ventana: 1.08h, Distancia: 9.9320
+  Ventana: 1.37h, Distancia: 9.9320
+  Ventana: 1.66h, Distancia: 9.9320
+  Ventana: 1.95h, Distancia: 9.9320
+  Ventana: 2.24h, Distancia: 9.2105
+  Ventana: 2.53h, Distancia: 9.2105
+  Ventana: 2.82h, Distancia: 9.2105
+  Ventana: 3.11h, Distancia: 9.2105
+  Ventana: 3.39h, Distancia: 9.2105
+  Ventana: 3.68h, Distancia: 9.2105
+  Ventana: 3.97h, Distancia: 9.2105
+  Ventana: 4.26h, Distancia: 8.7488
+  Ventana: 4.55h, Distancia: 8.7488
+  Ventana: 4.84h, Distancia: 8.7488
+  Ventana: 5.13h, Distancia: 8.7488
+  Ventana: 5.42h, Distancia: 8.7488
+  Ventana: 5.71h, Distancia: 8.7488
+  Ventana: 6.00h, Distancia: 8.3890
+
+===== REPORTE COMPLETO =====
+======================================================================
+REPORTE DE CALIBRACIÓN DE SENSORES IoT - PM2.5 (DATOS REALES)
+======================================================================
+
+INFORMACIÓN DE DATOS:
+- Puntos de referencia: 547
+- Puntos del sensor: 547
+- Rango temporal referencia: 0.00 - 546.00 horas
+- Rango temporal sensor: 0.00 - 546.00 horas
+- Rango PM2.5 referencia: 3.20 - 28.10 μg/m³
+- Rango PM2.5 sensor: 0.33 - 45.17 μg/m³
+
+ANÁLISIS DE DISTANCIA EUCLIDIANA:
+- Distancia euclidiana (ventana 6.0h): 8.3890
+
+OPTIMIZACIÓN DE VENTANA MÓVIL:
+- Mejor ventana: 6.00 horas
+- Menor distancia: 8.3890
+
+======================================================================
+===== FIN REPORTE =====
+
+Reporte guardado como 'reporte_datos_reales.txt'
+Datos procesados guardados
+
+======================================================================
+¡ANÁLISIS COMPLETADO!
+======================================================================
+Archivos generados:
+- resultados_datos_reales.png
+- reporte_datos_reales.txt
+- datos_sensor_procesados.csv
+- datos_referencia_procesados.csv
