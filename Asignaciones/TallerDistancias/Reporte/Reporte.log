@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.30)  26 SEP 2025 21:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.30)  26 SEP 2025 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,26 +343,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `Reporte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Info: Redefining \. on input line 63.
-LaTeX Info: Redefining \% on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
  (F:\miktex\tex/latex/graphics\color.sty
 Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
  (F:\miktex\tex/latex/graphics-cfg\color.cfg
@@ -370,7 +370,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (F:\miktex\tex/latex/graphics\mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 63.
+Package hyperref Info: Link coloring ON on input line 61.
  (Reporte.out) (Reporte.out)
 \@outlinefile=\write3
 \openout3 = `Reporte.out'.
@@ -423,11 +423,11 @@ Package hyperref Info: Link coloring ON on input line 63.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 (F:\miktex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
  (F:\miktex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (Reporte.toc
@@ -442,7 +442,7 @@ LaTeX Info: Redefining \% on input line 1.
 [1
 
 {C:/Users/juand/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (8.75313pt too wide) in paragraph at lines 80--81
+Overfull \hbox (8.75313pt too wide) in paragraph at lines 79--80
 []\T1/cmr/m/n/10 El aná-li-sis de va-li-dez de-mos-tró que el mo-de-lo es con-fia-ble (to-le-ran-cia 25$ $%) pa-ra con-cen-tra-cio-nes
  []
 
@@ -454,7 +454,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [2
 
 ]
-Overfull \hbox (8.69041pt too wide) in paragraph at lines 126--127
+Overfull \hbox (8.69041pt too wide) in paragraph at lines 125--126
 \T1/cmr/m/n/10.95 sin-cro-ni-za-dos $\OT1/cmr/m/n/10.95 ([](\OML/cmm/m/it/10.95 ^^X[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^X[]\OT1/cmr/m/n/10.95 ))$ \T1/cmr/m/n/10.95 y se mues-tra la rec-ta de mí-ni-mos cua-dra-dos. La pen-dien-te en-con-tra-da
  []
 
@@ -464,19 +464,19 @@ Overfull \hbox (8.69041pt too wide) in paragraph at lines 126--127
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.132 
+l.131 
       ]
-Overfull \hbox (24.73647pt too wide) in paragraph at lines 133--134
+Overfull \hbox (24.73647pt too wide) in paragraph at lines 132--133
 []\T1/cmr/m/n/10.95 Definiendo una to-le-ran-cia del 25$ $%, el in-ter-va-lo de va-li-dez so-bre el eje del sen-sor fue $\OT1/cmr/m/n/10.95 [2[]01\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 38[]10]$ $\OML/cmm/m/it/10.95 ^^V\OT1/cmr/m/n/10.95 g\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 m[]$\T1/cmr/m/n/10.95 .
  []
 
-<../Asignaciones/TallerDistancias/resultados_datos_reales.png, id=69, 1076.823pt x 853.5087pt>
+<../Asignaciones/TallerDistancias/resultados_datos_reales.png, id=68, 1076.823pt x 853.5087pt>
 File: ../Asignaciones/TallerDistancias/resultados_datos_reales.png Graphic file (type png)
 <use ../Asignaciones/TallerDistancias/resultados_datos_reales.png>
-Package pdftex.def Info: ../Asignaciones/TallerDistancias/resultados_datos_reales.png  used on input line 139.
+Package pdftex.def Info: ../Asignaciones/TallerDistancias/resultados_datos_reales.png  used on input line 138.
 (pdftex.def)             Requested size: 446.2658pt x 353.71764pt.
 
-Overfull \hbox (14.51103pt too wide) in paragraph at lines 146--147
+Overfull \hbox (14.51103pt too wide) in paragraph at lines 145--146
 \T1/cmr/m/n/10.95 ($\OML/cmm/m/it/10.95 R[] \OMS/cmsy/m/n/10.95 ^^Y \OT1/cmr/m/n/10.95 0[]71$\T1/cmr/m/n/10.95 ) y error cua-drá-ti-co me-dio mo-de-ra-do. El mo-de-lo es vá-li-do den-tro del ran-go de con-cen-tra-cio-nes
  []
 
@@ -486,7 +486,7 @@ Overfull \hbox (14.51103pt too wide) in paragraph at lines 146--147
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.147 
+l.146 
        <../Asignaciones/TallerDistancias/resultados_datos_reales.png>]
 
 [5] (Reporte.aux
@@ -503,15 +503,15 @@ Package rerunfilecheck Info: File `Reporte.out' has not changed.
 Here is how much of TeX's memory you used:
  12713 strings out of 468133
  193457 string characters out of 5447547
- 621898 words of memory out of 5000000
+ 621850 words of memory out of 5000000
  41140 multiletter control sequences out of 15000+600000
  644032 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,734b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><F:/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Reporte.pdf (5 pages, 1334754 bytes).
+ <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\juand\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><F:/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Reporte.pdf (5 pages, 1335557 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
+ 510 PDF objects out of 1000 (max. 8388607)
  15 named destinations out of 1000 (max. 500000)
  54 words of extra memory for PDF output out of 10000 (max. 10000000)
 

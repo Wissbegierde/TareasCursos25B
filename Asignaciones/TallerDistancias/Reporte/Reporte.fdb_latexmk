@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1758938700.68349 "c:/Users/juand/OneDrive/libros/TareasCursos25B/Asignaciones/TallerDistancias/Reporte/Reporte.tex" "Reporte.pdf" "Reporte" 1758938703.2039 0
-  "../Asignaciones/TallerDistancias/resultados_datos_reales.png" 1758936278 1171170 c07e43d88a98722038e52118df386150 ""
+["pdflatex"] 1758948818.0234 "c:/Users/juand/OneDrive/libros/TareasCursos25B/Asignaciones/TallerDistancias/Reporte/Reporte.tex" "Reporte.pdf" "Reporte" 1758948822.01174 0
+  "../Asignaciones/TallerDistancias/resultados_datos_reales.png" 1758940743 1171170 c07e43d88a98722038e52118df386150 ""
   "C:/Users/juand/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758934728 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/juand/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1756675500 25420 49d0028c5134b4794fa6ea4036bda3c6 ""
   "C:/Users/juand/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1758934735 28976 bce4364248d6f4b595c72415509afaf0 ""
@@ -119,11 +119,11 @@
   "F:/miktex/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "F:/miktex/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "F:/miktex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Reporte.aux" 1758938702 2432 a6234a29e03f7ad72ba2fb01e9930fd3 "pdflatex"
-  "Reporte.out" 1758938702 931 4a7e506b8c91cc1a4744127ab9669168 "pdflatex"
-  "Reporte.tex" 1758938700 11519 670af5781b797169200f88395297d6fb ""
-  "Reporte.toc" 1758938703 503 7bc4364d2c880e8f0dcf441f9ca5b53f "pdflatex"
-  "c:/Users/juand/OneDrive/libros/TareasCursos25B/Asignaciones/TallerDistancias/Reporte/Reporte.tex" 1758938700 11519 670af5781b797169200f88395297d6fb ""
+  "Reporte.aux" 1758948821 2432 a6234a29e03f7ad72ba2fb01e9930fd3 "pdflatex"
+  "Reporte.out" 1758948821 931 4a7e506b8c91cc1a4744127ab9669168 "pdflatex"
+  "Reporte.tex" 1758948817 11467 336f5d816799ac51be932234ba1a6d2c ""
+  "Reporte.toc" 1758948821 503 7bc4364d2c880e8f0dcf441f9ca5b53f "pdflatex"
+  "c:/Users/juand/OneDrive/libros/TareasCursos25B/Asignaciones/TallerDistancias/Reporte/Reporte.tex" 1758948817 11467 336f5d816799ac51be932234ba1a6d2c ""
   (generated)
   "Reporte.aux"
   "Reporte.log"

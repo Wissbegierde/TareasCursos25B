@@ -206,7 +206,6 @@ INPUT F:\miktex\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT F:\miktex\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT F:\miktex\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT F:\miktex\fonts\tfm\jknappen\ec\ecti1000.tfm
-INPUT F:\miktex\fonts\tfm\jknappen\ec\ecti1095.tfm
 INPUT ..\Asignaciones\TallerDistancias\resultados_datos_reales.png
 INPUT ..\Asignaciones\TallerDistancias\resultados_datos_reales.png
 INPUT ..\Asignaciones\TallerDistancias\resultados_datos_reales.png
@@ -215,13 +214,14 @@ INPUT ..\Asignaciones\TallerDistancias\resultados_datos_reales.png
 INPUT ..\Asignaciones\TallerDistancias\resultados_datos_reales.png
 INPUT ..\Asignaciones\TallerDistancias\resultados_datos_reales.png
 INPUT F:\miktex\fonts\tfm\jknappen\ec\ectt1095.tfm
+INPUT F:\miktex\fonts\tfm\jknappen\ec\ecti1095.tfm
 INPUT Reporte.aux
 INPUT .\Reporte.out
 INPUT .\Reporte.out
-INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
-INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
+INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
+INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\juand\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
