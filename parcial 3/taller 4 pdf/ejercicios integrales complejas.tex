@@ -1,0 +1,436 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\title{Ejercicios Integrales Complejas}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\textbf{Sección 1.3.8 - Ejercicios 4, 11 y 12}
+\end{center}
+
+\section*{Ejercicio 4 - Sección 1.3.8}
+
+\section*{4. Utilizando una representación paramétrica para los diferentes caminos $C$ evalúe la integral $\int_C f(z) dz$}
+
+\subsection*{a) $f(z) = \frac{z + 2}{z}$, $C$:}
+
+\subsubsection*{i) El semicírculo $z = 2e^{i\theta}$ con $(0 \leq \theta \leq \pi)$}
+
+Parametrización: $z(\theta) = 2e^{i\theta}$, $0 \leq \theta \leq \pi$
+
+Derivada: $\frac{dz}{d\theta} = 2ie^{i\theta}$
+
+Sustituyendo en la integral:
+\begin{align*}
+\int_C \frac{z + 2}{z} dz &= \int_0^{\pi} \frac{2e^{i\theta} + 2}{2e^{i\theta}} \cdot 2ie^{i\theta} d\theta \\
+                          &= \int_0^{\pi} \frac{2(e^{i\theta} + 1)}{2e^{i\theta}} \cdot 2ie^{i\theta} d\theta \\
+                          &= \int_0^{\pi} \frac{e^{i\theta} + 1}{e^{i\theta}} \cdot 2ie^{i\theta} d\theta \\
+                          &= \int_0^{\pi} (e^{i\theta} + 1) \cdot 2i d\theta \\
+                          &= 2i \int_0^{\pi} (e^{i\theta} + 1) d\theta \\
+                          &= 2i \left[\frac{e^{i\theta}}{i} + \theta\right]_0^{\pi} \\
+                          &= 2i \left(\frac{e^{i\pi}}{i} + \pi - \frac{e^0}{i} - 0\right) \\
+                          &= 2i \left(\frac{-1}{i} + \pi - \frac{1}{i}\right) \\
+                          &= 2i \left(\pi - \frac{2}{i}\right) \\
+                          &= 2i\pi - 4 \\
+                          &= 2\pi i - 4
+\end{align*}
+
+\textbf{Resultado:} $\int_C \frac{z + 2}{z} dz = 2\pi i - 4$
+
+\subsubsection*{ii) El semicírculo $z = 2e^{i\theta}$ con $(\pi \leq \theta \leq 2\pi)$}
+
+Parametrización: $z(\theta) = 2e^{i\theta}$, $\pi \leq \theta \leq 2\pi$
+
+Derivada: $\frac{dz}{d\theta} = 2ie^{i\theta}$
+
+\begin{align*}
+\int_C \frac{z + 2}{z} dz &= \int_{\pi}^{2\pi} \frac{2e^{i\theta} + 2}{2e^{i\theta}} \cdot 2ie^{i\theta} d\theta \\
+                          &= 2i \int_{\pi}^{2\pi} (e^{i\theta} + 1) d\theta \\
+                          &= 2i \left[\frac{e^{i\theta}}{i} + \theta\right]_{\pi}^{2\pi} \\
+                          &= 2i \left(\frac{e^{i2\pi}}{i} + 2\pi - \frac{e^{i\pi}}{i} - \pi\right) \\
+                          &= 2i \left(\frac{1}{i} + 2\pi - \frac{-1}{i} - \pi\right) \\
+                          &= 2i \left(\pi + \frac{2}{i}\right) \\
+                          &= 2i\pi + 4 \\
+                          &= 2\pi i + 4
+\end{align*}
+
+\textbf{Resultado:} $\int_C \frac{z + 2}{z} dz = 2\pi i + 4$
+
+\subsubsection*{iii) El círculo $z = 2e^{i\theta}$ con $(0 \leq \theta \leq 2\pi)$}
+
+Parametrización: $z(\theta) = 2e^{i\theta}$, $0 \leq \theta \leq 2\pi$
+
+Derivada: $\frac{dz}{d\theta} = 2ie^{i\theta}$
+
+\begin{align*}
+\int_C \frac{z + 2}{z} dz &= \int_0^{2\pi} \frac{2e^{i\theta} + 2}{2e^{i\theta}} \cdot 2ie^{i\theta} d\theta \\
+                          &= 2i \int_0^{2\pi} (e^{i\theta} + 1) d\theta \\
+                          &= 2i \left[\frac{e^{i\theta}}{i} + \theta\right]_0^{2\pi} \\
+                          &= 2i \left(\frac{e^{i2\pi}}{i} + 2\pi - \frac{e^0}{i} - 0\right) \\
+                          &= 2i \left(\frac{1}{i} + 2\pi - \frac{1}{i}\right) \\
+                          &= 2i \cdot 2\pi \\
+                          &= 4\pi i
+\end{align*}
+
+\textbf{Resultado:} $\int_C \frac{z + 2}{z} dz = 4\pi i$
+
+\subsection*{b) $f(z) = z - 1$, $C$: el arco que va desde $z = 0$ a $z = 2$}
+
+\subsubsection*{i) El semicírculo $z = 1 + e^{i\theta}$ con $(\pi \leq \theta \leq 2\pi)$}
+
+Parametrización: $z(\theta) = 1 + e^{i\theta}$, $\pi \leq \theta \leq 2\pi$
+
+Derivada: $\frac{dz}{d\theta} = ie^{i\theta}$
+
+Verificando los puntos extremos:
+\begin{itemize}
+\item $\theta = \pi$: $z = 1 + e^{i\pi} = 1 - 1 = 0$ \checkmark
+\item $\theta = 2\pi$: $z = 1 + e^{i2\pi} = 1 + 1 = 2$ \checkmark
+\end{itemize}
+
+\begin{align*}
+\int_C (z - 1) dz &= \int_{\pi}^{2\pi} ((1 + e^{i\theta}) - 1) \cdot ie^{i\theta} d\theta \\
+                  &= \int_{\pi}^{2\pi} e^{i\theta} \cdot ie^{i\theta} d\theta \\
+                  &= i \int_{\pi}^{2\pi} e^{i2\theta} d\theta \\
+                  &= i \left[\frac{e^{i2\theta}}{2i}\right]_{\pi}^{2\pi} \\
+                  &= \frac{1}{2} \left[e^{i2\theta}\right]_{\pi}^{2\pi} \\
+                  &= \frac{1}{2} (e^{i4\pi} - e^{i2\pi}) \\
+                  &= \frac{1}{2} (1 - 1) \\
+                  &= 0
+\end{align*}
+
+\textbf{Resultado:} $\int_C (z - 1) dz = 0$
+
+\subsubsection*{ii) El segmento $z = x$ $(0 \leq x \leq 2)$ sobre el eje real}
+
+Parametrización: $z(x) = x$, $0 \leq x \leq 2$ (donde $x$ es real)
+
+Derivada: $\frac{dz}{dx} = 1$
+
+\begin{align*}
+\int_C (z - 1) dz &= \int_0^2 (x - 1) \cdot 1 dx \\
+                  &= \int_0^2 (x - 1) dx \\
+                  &= \left[\frac{x^2}{2} - x\right]_0^2 \\
+                  &= \left(\frac{4}{2} - 2\right) - (0 - 0) \\
+                  &= 2 - 2 \\
+                  &= 0
+\end{align*}
+
+\textbf{Resultado:} $\int_C (z - 1) dz = 0$
+
+\subsection*{c) $f(z) = \pi e^{\pi z^*}$, $C$: el contorno conformado por el cuadrado con vértices en $0, 1, 1 + i, i$ en sentido antihorario}
+
+El contorno $C$ está formado por cuatro segmentos:
+\begin{enumerate}
+\item De $0$ a $1$: $z(t) = t$, $0 \leq t \leq 1$
+\item De $1$ a $1 + i$: $z(t) = 1 + it$, $0 \leq t \leq 1$
+\item De $1 + i$ a $i$: $z(t) = (1 - t) + i$, $0 \leq t \leq 1$ (o $z(t) = 1 - t + i$)
+\item De $i$ a $0$: $z(t) = i(1 - t)$, $0 \leq t \leq 1$ (o $z(t) = i - it$)
+\end{enumerate}
+
+Para $f(z) = \pi e^{\pi z^*}$, donde $z^*$ es el conjugado de $z$:
+\begin{itemize}
+\item Si $z = x + iy$, entonces $z^* = x - iy$
+\item $f(z) = \pi e^{\pi(x - iy)} = \pi e^{\pi x} e^{-i\pi y}$
+\end{itemize}
+
+\subsubsection*{Segmento 1: De $0$ a $1$}
+
+$z(t) = t$ (real), $0 \leq t \leq 1$
+
+$z^*(t) = t$, $\frac{dz}{dt} = 1$
+
+\begin{align*}
+I_1 &= \int_0^1 \pi e^{\pi t} \cdot 1 dt \\
+    &= \pi \int_0^1 e^{\pi t} dt \\
+    &= \pi \left[\frac{e^{\pi t}}{\pi}\right]_0^1 \\
+    &= e^{\pi} - 1
+\end{align*}
+
+\subsubsection*{Segmento 2: De $1$ a $1 + i$}
+
+$z(t) = 1 + it$, $0 \leq t \leq 1$
+
+$z^*(t) = 1 - it$, $\frac{dz}{dt} = i$
+
+\begin{align*}
+I_2 &= \int_0^1 \pi e^{\pi(1 - it)} \cdot i dt \\
+    &= \pi i e^{\pi} \int_0^1 e^{-i\pi t} dt \\
+    &= \pi i e^{\pi} \left[\frac{e^{-i\pi t}}{-i\pi}\right]_0^1 \\
+    &= -e^{\pi} (e^{-i\pi} - 1) \\
+    &= -e^{\pi} (-1 - 1) \\
+    &= 2e^{\pi}
+\end{align*}
+
+\subsubsection*{Segmento 3: De $1 + i$ a $i$}
+
+$z(t) = 1 - t + i$, $0 \leq t \leq 1$
+
+$z^*(t) = 1 - t - i$, $\frac{dz}{dt} = -1$
+
+\begin{align*}
+I_3 &= \int_0^1 \pi e^{\pi(1 - t - i)} \cdot (-1) dt \\
+    &= -\pi e^{\pi - i\pi} \int_0^1 e^{-\pi t} dt \\
+    &= -\pi e^{\pi} e^{-i\pi} \left[\frac{e^{-\pi t}}{-\pi}\right]_0^1 \\
+    &= e^{\pi} e^{-i\pi} (e^{-\pi} - 1) \\
+    &= e^{\pi} (-1) (e^{-\pi} - 1) \\
+    &= -e^{\pi} (e^{-\pi} - 1) \\
+    &= -1 + e^{\pi}
+\end{align*}
+
+\subsubsection*{Segmento 4: De $i$ a $0$}
+
+$z(t) = i(1 - t) = i - it$, $0 \leq t \leq 1$
+
+$z^*(t) = -i(1 - t) = -i + it$, $\frac{dz}{dt} = -i$
+
+\begin{align*}
+I_4 &= \int_0^1 \pi e^{\pi(-i + it)} \cdot (-i) dt \\
+    &= -\pi i e^{-i\pi} \int_0^1 e^{i\pi t} dt \\
+    &= -\pi i e^{-i\pi} \left[\frac{e^{i\pi t}}{i\pi}\right]_0^1 \\
+    &= -e^{-i\pi} (e^{i\pi} - 1) \\
+    &= -(-1) (-1 - 1) \\
+    &= -2
+\end{align*}
+
+\subsubsection*{Resultado total:}
+
+\begin{align*}
+\int_C \pi e^{\pi z^*} dz &= I_1 + I_2 + I_3 + I_4 \\
+                          &= (e^{\pi} - 1) + 2e^{\pi} + (-1 + e^{\pi}) + (-2) \\
+                          &= e^{\pi} - 1 + 2e^{\pi} - 1 + e^{\pi} - 2 \\
+                          &= 4e^{\pi} - 4 \\
+                          &= 4(e^{\pi} - 1)
+\end{align*}
+
+\textbf{Resultado:} $\int_C \pi e^{\pi z^*} dz = 4(e^{\pi} - 1)$
+
+\subsection*{d) $f(z) = \begin{cases} 1 & \text{si } y < 0 \\ 4y & \text{si } y > 0 \end{cases}$, $C$: el arco que va desde $z = -1 - i$ a $z = 1 + i$, conformado por la curva $y = x^3$}
+
+Parametrización de la curva $y = x^3$ desde $x = -1$ hasta $x = 1$:
+$$z(t) = t + it^3, \quad -1 \leq t \leq 1$$
+
+Derivada: $\frac{dz}{dt} = 1 + 3it^2$
+
+Verificando los puntos extremos:
+\begin{itemize}
+\item $t = -1$: $z = -1 + i(-1)^3 = -1 - i$ \checkmark
+\item $t = 1$: $z = 1 + i(1)^3 = 1 + i$ \checkmark
+\end{itemize}
+
+La función $f(z)$ depende de $y$:
+\begin{itemize}
+\item Si $y < 0$: $f(z) = 1$
+\item Si $y > 0$: $f(z) = 4y$
+\end{itemize}
+
+En nuestra parametrización, $y = t^3$:
+\begin{itemize}
+\item Si $t < 0$: $y = t^3 < 0$, entonces $f(z) = 1$
+\item Si $t > 0$: $y = t^3 > 0$, entonces $f(z) = 4y = 4t^3$
+\item Si $t = 0$: $y = 0$, necesitamos definir el valor (usualmente se toma el límite o se define por continuidad)
+\end{itemize}
+
+Dividiendo la integral en dos partes:
+
+\subsubsection*{Para $t \in [-1, 0]$: $y = t^3 < 0$, $f(z) = 1$}
+
+\begin{align*}
+I_1 &= \int_{-1}^0 1 \cdot (1 + 3it^2) dt \\
+    &= \int_{-1}^0 (1 + 3it^2) dt \\
+    &= \left[t + it^3\right]_{-1}^0 \\
+    &= (0 + 0) - (-1 + i(-1)^3) \\
+    &= -(-1 - i) \\
+    &= 1 + i
+\end{align*}
+
+\subsubsection*{Para $t \in [0, 1]$: $y = t^3 > 0$, $f(z) = 4y = 4t^3$}
+
+\begin{align*}
+I_2 &= \int_0^1 4t^3 \cdot (1 + 3it^2) dt \\
+    &= \int_0^1 (4t^3 + 12it^5) dt \\
+    &= \left[t^4 + 2it^6\right]_0^1 \\
+    &= (1 + 2i) - (0 + 0) \\
+    &= 1 + 2i
+\end{align*}
+
+\subsubsection*{Resultado total:}
+
+\begin{align*}
+\int_C f(z) dz &= I_1 + I_2 \\
+               &= (1 + i) + (1 + 2i) \\
+               &= 2 + 3i
+\end{align*}
+
+\textbf{Resultado:} $\int_C f(z) dz = 2 + 3i$
+
+\newpage
+\section*{Ejercicio 11 - Sección 1.3.8}
+
+\section*{11. Integre en sentido antihorario}
+
+\subsection*{a) $\oint_C \frac{dz}{z^2 + 4}$ donde $C: 4x^2 + (y - 2)^2 = 4$}
+
+Factorizando el denominador: $z^2 + 4 = (z - 2i)(z + 2i)$
+
+Las singularidades son $z = 2i$ y $z = -2i$.
+
+La elipse $4x^2 + (y - 2)^2 = 4$ puede escribirse como:
+$$\frac{x^2}{1} + \frac{(y - 2)^2}{4} = 1$$
+
+Esta es una elipse con centro en $(0, 2)$ (es decir, $z = 2i$), semieje horizontal $a = 1$ y semieje vertical $b = 2$.
+
+El punto $z = 2i$ está en el centro de la elipse, por lo que está \textbf{dentro} del contorno.
+
+El punto $z = -2i$ está a distancia $|2i - (-2i)| = |4i| = 4$ del centro, y como el semieje vertical es $b = 2$, el punto $z = -2i$ está \textbf{fuera} del contorno.
+
+Usando fracciones parciales:
+$$\frac{1}{z^2 + 4} = \frac{1}{(z - 2i)(z + 2i)} = \frac{A}{z - 2i} + \frac{B}{z + 2i}$$
+
+Resolviendo: $1 = A(z + 2i) + B(z - 2i)$
+
+Para $z = 2i$: $1 = A(4i)$, entonces $A = \frac{1}{4i} = -\frac{i}{4}$
+
+Para $z = -2i$: $1 = B(-4i)$, entonces $B = -\frac{1}{4i} = \frac{i}{4}$
+
+Por lo tanto:
+$$\frac{1}{z^2 + 4} = \frac{-i/4}{z - 2i} + \frac{i/4}{z + 2i}$$
+
+Como solo $z = 2i$ está dentro del contorno:
+\begin{align*}
+\oint_C \frac{dz}{z^2 + 4} &= \oint_C \frac{-i/4}{z - 2i} dz + \oint_C \frac{i/4}{z + 2i} dz \\
+                            &= 2\pi i \cdot \left(-\frac{i}{4}\right) + 0 \\
+                            &= -\frac{2\pi i^2}{4} \\
+                            &= \frac{\pi}{2}
+\end{align*}
+
+\textbf{Resultado:} $\oint_C \frac{dz}{z^2 + 4} = \frac{\pi}{2}$
+
+\subsection*{b) $\oint_C \frac{z dz}{z^2 + 4z + 3}$ donde $C$: círculo con centro en $-1$ y radio 3}
+
+Factorizando el denominador: $z^2 + 4z + 3 = (z + 1)(z + 3)$
+
+Las singularidades son $z = -1$ y $z = -3$.
+
+El círculo tiene centro en $z = -1$ y radio 3.
+
+El punto $z = -1$ está en el centro, por lo que está \textbf{dentro} del contorno.
+
+El punto $z = -3$ está a distancia $|-3 - (-1)| = |-2| = 2$ del centro, y como el radio es 3, el punto $z = -3$ está \textbf{dentro} del contorno.
+
+Usando fracciones parciales:
+$$\frac{z}{z^2 + 4z + 3} = \frac{z}{(z + 1)(z + 3)} = \frac{A}{z + 1} + \frac{B}{z + 3}$$
+
+Resolviendo: $z = A(z + 3) + B(z + 1)$
+
+Para $z = -1$: $-1 = A(2)$, entonces $A = -\frac{1}{2}$
+
+Para $z = -3$: $-3 = B(-2)$, entonces $B = \frac{3}{2}$
+
+Por lo tanto:
+$$\frac{z}{z^2 + 4z + 3} = \frac{-1/2}{z + 1} + \frac{3/2}{z + 3}$$
+
+Ambos puntos singulares están dentro del contorno:
+\begin{align*}
+\oint_C \frac{z dz}{z^2 + 4z + 3} &= \oint_C \frac{-1/2}{z + 1} dz + \oint_C \frac{3/2}{z + 3} dz \\
+                                   &= 2\pi i \cdot \left(-\frac{1}{2}\right) + 2\pi i \cdot \frac{3}{2} \\
+                                   &= -\pi i + 3\pi i \\
+                                   &= 2\pi i
+\end{align*}
+
+\textbf{Resultado:} $\oint_C \frac{z dz}{z^2 + 4z + 3} = 2\pi i$
+
+\subsection*{c) $\oint_C \frac{z + 2}{z - 2} dz$ donde $C: |z - 1| = 2$}
+
+El círculo tiene centro en $z = 1$ y radio 2.
+
+La singularidad es $z = 2$. Verificando si está dentro del contorno:
+$$|2 - 1| = 1 < 2$$
+
+Por lo tanto, $z = 2$ está \textbf{dentro} del círculo.
+
+Usando la fórmula integral de Cauchy con $f(z) = z + 2$ y $z_0 = 2$:
+$$f(2) = 2 + 2 = 4$$
+
+Por lo tanto:
+\begin{align*}
+\oint_C \frac{z + 2}{z - 2} dz &= 2\pi i \cdot f(2) \\
+                                &= 2\pi i \cdot 4 \\
+                                &= 8\pi i
+\end{align*}
+
+\textbf{Resultado:} $\oint_C \frac{z + 2}{z - 2} dz = 8\pi i$
+
+\subsection*{d) $\oint_C \frac{e^{z^2} dz}{z e^{z^2} - 2iz}$ donde $C: |z| = 0.6$}
+
+Simplificando el denominador:
+$$z e^{z^2} - 2iz = z(e^{z^2} - 2i)$$
+
+La singularidad es $z = 0$ (del factor $z$) y también los puntos donde $e^{z^2} - 2i = 0$, es decir, $e^{z^2} = 2i$.
+
+Para $e^{z^2} = 2i$, tenemos $z^2 = \ln(2i) = \ln(2) + i(\pi/2 + 2k\pi)$ para $k \in \mathbb{Z}$.
+
+Sin embargo, el círculo $|z| = 0.6$ es pequeño. La singularidad $z = 0$ está en el centro, por lo que está \textbf{dentro} del contorno.
+
+Reescribiendo el integrando:
+$$\frac{e^{z^2}}{z e^{z^2} - 2iz} = \frac{e^{z^2}}{z(e^{z^2} - 2i)}$$
+
+Para aplicar la fórmula de Cauchy, necesitamos que el denominador tenga la forma $(z - z_0)$. Reescribamos:
+$$\frac{e^{z^2}}{z(e^{z^2} - 2i)} = \frac{e^{z^2}/(e^{z^2} - 2i)}{z}$$
+
+Usando la fórmula integral de Cauchy con $f(z) = \frac{e^{z^2}}{e^{z^2} - 2i}$ y $z_0 = 0$:
+$$f(0) = \frac{e^{0}}{e^{0} - 2i} = \frac{1}{1 - 2i} = \frac{1 + 2i}{(1 - 2i)(1 + 2i)} = \frac{1 + 2i}{1 + 4} = \frac{1 + 2i}{5}$$
+
+Por lo tanto:
+\begin{align*}
+\oint_C \frac{e^{z^2} dz}{z e^{z^2} - 2iz} &= 2\pi i \cdot f(0) \\
+                                           &= 2\pi i \cdot \frac{1 + 2i}{5} \\
+                                           &= \frac{2\pi i(1 + 2i)}{5} \\
+                                           &= \frac{2\pi i - 4\pi}{5} \\
+                                           &= \frac{2\pi(i - 2)}{5}
+\end{align*}
+
+\textbf{Resultado:} $\oint_C \frac{e^{z^2} dz}{z e^{z^2} - 2iz} = \frac{2\pi(i - 2)}{5}$
+
+\newpage
+\section*{Ejercicio 12 - Sección 1.3.8}
+
+\section*{12. Demuestre que $\oint_C \frac{1}{(z - z_1)(z - z_2)} dz = 0$}
+
+\textbf{Para un camino cerrado simple $C$ que contiene los puntos $z_1$ y $z_2$ arbitrarios.}
+
+Usando fracciones parciales:
+$$\frac{1}{(z - z_1)(z - z_2)} = \frac{A}{z - z_1} + \frac{B}{z - z_2}$$
+
+Resolviendo: $1 = A(z - z_2) + B(z - z_1)$
+
+Para $z = z_1$: $1 = A(z_1 - z_2)$, entonces $A = \frac{1}{z_1 - z_2}$
+
+Para $z = z_2$: $1 = B(z_2 - z_1)$, entonces $B = \frac{1}{z_2 - z_1} = -\frac{1}{z_1 - z_2}$
+
+Por lo tanto:
+$$\frac{1}{(z - z_1)(z - z_2)} = \frac{1/(z_1 - z_2)}{z - z_1} + \frac{-1/(z_1 - z_2)}{z - z_2} = \frac{1}{z_1 - z_2}\left(\frac{1}{z - z_1} - \frac{1}{z - z_2}\right)$$
+
+Como el contorno $C$ contiene ambos puntos $z_1$ y $z_2$, podemos aplicar la fórmula integral de Cauchy a cada término:
+
+\begin{align*}
+\oint_C \frac{1}{(z - z_1)(z - z_2)} dz &= \frac{1}{z_1 - z_2} \oint_C \left(\frac{1}{z - z_1} - \frac{1}{z - z_2}\right) dz \\
+                                         &= \frac{1}{z_1 - z_2} \left[\oint_C \frac{1}{z - z_1} dz - \oint_C \frac{1}{z - z_2} dz\right] \\
+                                         &= \frac{1}{z_1 - z_2} \left[2\pi i \cdot 1 - 2\pi i \cdot 1\right] \\
+                                         &= \frac{1}{z_1 - z_2} \cdot 0 \\
+                                         &= 0
+\end{align*}
+
+\textbf{Demostración completa:} La integral es cero porque ambas singularidades están dentro del contorno y las contribuciones de cada una se cancelan exactamente. Esto es una consecuencia directa del teorema de Cauchy y la fórmula integral de Cauchy, donde cada singularidad contribuye con $2\pi i$ multiplicado por el valor de la función en ese punto, y como ambas contribuciones son iguales en magnitud pero de signo opuesto (debido a la descomposición en fracciones parciales), se cancelan completamente.
+
+\end{document}
+

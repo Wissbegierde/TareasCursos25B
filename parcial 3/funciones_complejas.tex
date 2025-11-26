@@ -1,0 +1,689 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Derivadas de Funciones Complejas}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{4. Encuentre las derivadas}
+
+\subsection*{a) $f(z) = \frac{z - i}{z + i}$, encontrar $f'(i)$}
+
+Aplicando la regla del cociente:
+\begin{align*}
+f'(z) &= \frac{(z + i)(1) - (z - i)(1)}{(z + i)^2} \\
+      &= \frac{z + i - z + i}{(z + i)^2} \\
+      &= \frac{2i}{(z + i)^2}
+\end{align*}
+
+Evaluando en $z = i$:
+\begin{align*}
+f'(i) &= \frac{2i}{(i + i)^2} \\
+      &= \frac{2i}{(2i)^2} \\
+      &= \frac{2i}{4i^2} \\
+      &= \frac{2i}{-4} \\
+      &= -\frac{i}{2}
+\end{align*}
+
+Por lo tanto, $f'(i) = -\frac{i}{2}$.
+
+\subsection*{b) $f(z) = (z - 4i)^8$, encontrar $f'(3 + 4i)$}
+
+Aplicando la regla de la cadena:
+\begin{align*}
+f'(z) &= 8(z - 4i)^7 \cdot 1 \\
+      &= 8(z - 4i)^7
+\end{align*}
+
+Evaluando en $z = 3 + 4i$:
+\begin{align*}
+f'(3 + 4i) &= 8(3 + 4i - 4i)^7 \\
+           &= 8(3)^7 \\
+           &= 8 \cdot 2187 \\
+           &= 17496
+\end{align*}
+
+Por lo tanto, $f'(3 + 4i) = 17496$.
+
+\subsection*{c) $f(z) = \frac{1.5z + 2i}{3iz - 4}$, encontrar $f'(z)$ para todo $z$}
+
+Aplicando la regla del cociente:
+\begin{align*}
+f'(z) &= \frac{(3iz - 4)(1.5) - (1.5z + 2i)(3i)}{(3iz - 4)^2} \\
+      &= \frac{1.5(3iz - 4) - 3i(1.5z + 2i)}{(3iz - 4)^2} \\
+      &= \frac{4.5iz - 6 - 4.5iz - 6i^2}{(3iz - 4)^2} \\
+      &= \frac{4.5iz - 6 - 4.5iz + 6}{(3iz - 4)^2} \\
+      &= \frac{0}{(3iz - 4)^2} \\
+      &= 0
+\end{align*}
+
+Por lo tanto, $f'(z) = 0$ para todo $z$ tal que $3iz - 4 \neq 0$ (es decir, para $z \neq -\frac{4}{3i} = \frac{4i}{3}$).
+
+\subsection*{d) $f(z) = i(1 - z)^n$, encontrar $f'(0)$}
+
+Aplicando la regla de la cadena:
+\begin{align*}
+f'(z) &= i \cdot n(1 - z)^{n-1} \cdot (-1) \\
+      &= -in(1 - z)^{n-1}
+\end{align*}
+
+Evaluando en $z = 0$:
+\begin{align*}
+f'(0) &= -in(1 - 0)^{n-1} \\
+      &= -in(1)^{n-1} \\
+      &= -in
+\end{align*}
+
+Por lo tanto, $f'(0) = -in$.
+
+\subsection*{e) $f(z) = (iz^3 + 3z^2)^3$, encontrar $f'(2i)$}
+
+Aplicando la regla de la cadena:
+\begin{align*}
+f'(z) &= 3(iz^3 + 3z^2)^2 \cdot \frac{d}{dz}(iz^3 + 3z^2) \\
+      &= 3(iz^3 + 3z^2)^2 \cdot (3iz^2 + 6z) \\
+      &= 3(iz^3 + 3z^2)^2(3iz^2 + 6z)
+\end{align*}
+
+Evaluando en $z = 2i$:
+\begin{align*}
+(2i)^2 &= 4i^2 = -4 \\
+(2i)^3 &= 8i^3 = -8i \\
+iz^3 + 3z^2 &= i(-8i) + 3(-4) = -8i^2 - 12 = 8 - 12 = -4 \\
+3iz^2 + 6z &= 3i(-4) + 6(2i) = -12i + 12i = 0
+\end{align*}
+
+Por lo tanto:
+\begin{align*}
+f'(2i) &= 3(-4)^2 \cdot 0 \\
+       &= 3 \cdot 16 \cdot 0 \\
+       &= 0
+\end{align*}
+
+Por lo tanto, $f'(2i) = 0$.
+
+\subsection*{f) $f(z) = \frac{z^3}{(z + i)^3}$, encontrar $f'(i)$}
+
+Aplicando la regla del cociente:
+\begin{align*}
+f'(z) &= \frac{(z + i)^3 \cdot 3z^2 - z^3 \cdot 3(z + i)^2}{(z + i)^6} \\
+      &= \frac{3z^2(z + i)^3 - 3z^3(z + i)^2}{(z + i)^6} \\
+      &= \frac{3z^2(z + i)^2[(z + i) - z]}{(z + i)^6} \\
+      &= \frac{3z^2(z + i)^2 \cdot i}{(z + i)^6} \\
+      &= \frac{3iz^2}{(z + i)^4}
+\end{align*}
+
+Evaluando en $z = i$:
+\begin{align*}
+f'(i) &= \frac{3i(i)^2}{(i + i)^4} \\
+      &= \frac{3i(-1)}{(2i)^4} \\
+      &= \frac{-3i}{16i^4} \\
+      &= \frac{-3i}{16} \\
+      &= -\frac{3i}{16}
+\end{align*}
+
+Por lo tanto, $f'(i) = -\frac{3i}{16}$.
+
+\newpage
+\section*{¿Cuáles de las siguientes funciones son analíticas?}
+
+Para determinar si una función $f(z) = u(x,y) + iv(x,y)$ es analítica, debemos verificar las \textbf{ecuaciones de Cauchy-Riemann}:
+\begin{align}
+\frac{\partial u}{\partial x} &= \frac{\partial v}{\partial y} \label{CR1} \\
+\frac{\partial u}{\partial y} &= -\frac{\partial v}{\partial x} \label{CR2}
+\end{align}
+
+Además, las derivadas parciales deben ser continuas.
+
+\subsection*{a) $f(z) = izz^*$}
+
+Expresando $z = x + iy$ y $z^* = x - iy$ (el conjugado de $z$):
+\begin{align*}
+f(z) &= iz \cdot z^* = i(x + iy)(x - iy) \\
+     &= i(x^2 + y^2) \\
+     &= 0 + i(x^2 + y^2)
+\end{align*}
+
+Por lo tanto:
+\begin{align*}
+u(x,y) &= 0 \\
+v(x,y) &= x^2 + y^2
+\end{align*}
+
+Calculando las derivadas parciales:
+\begin{align*}
+\frac{\partial u}{\partial x} &= 0, \quad \frac{\partial u}{\partial y} = 0 \\
+\frac{\partial v}{\partial x} &= 2x, \quad \frac{\partial v}{\partial y} = 2y
+\end{align*}
+
+Verificando las ecuaciones de Cauchy-Riemann:
+\begin{align*}
+\frac{\partial u}{\partial x} = 0 &\neq 2y = \frac{\partial v}{\partial y} \quad \text{(excepto cuando } y = 0\text{)} \\
+\frac{\partial u}{\partial y} = 0 &\neq -2x = -\frac{\partial v}{\partial x} \quad \text{(excepto cuando } x = 0\text{)}
+\end{align*}
+
+\textbf{Conclusión:} La función \textbf{NO es analítica} porque no cumple las ecuaciones de Cauchy-Riemann en general.
+
+\subsection*{b) $f(z) = e^{-2x}(\cos(2y) - i\sin(2y))$}
+
+Expresando la función:
+\begin{align*}
+f(z) &= e^{-2x}\cos(2y) - ie^{-2x}\sin(2y)
+\end{align*}
+
+Por lo tanto:
+\begin{align*}
+u(x,y) &= e^{-2x}\cos(2y) \\
+v(x,y) &= -e^{-2x}\sin(2y)
+\end{align*}
+
+Calculando las derivadas parciales:
+\begin{align*}
+\frac{\partial u}{\partial x} &= -2e^{-2x}\cos(2y) \\
+\frac{\partial u}{\partial y} &= -2e^{-2x}\sin(2y) \\
+\frac{\partial v}{\partial x} &= 2e^{-2x}\sin(2y) \\
+\frac{\partial v}{\partial y} &= -2e^{-2x}\cos(2y)
+\end{align*}
+
+Verificando las ecuaciones de Cauchy-Riemann:
+\begin{align*}
+\frac{\partial u}{\partial x} = -2e^{-2x}\cos(2y) &= \frac{\partial v}{\partial y} = -2e^{-2x}\cos(2y) \quad \checkmark \\
+\frac{\partial u}{\partial y} = -2e^{-2x}\sin(2y) &= -\frac{\partial v}{\partial x} = -2e^{-2x}\sin(2y) \quad \checkmark
+\end{align*}
+
+Las derivadas parciales son continuas en todo el plano complejo.
+
+\textbf{Conclusión:} La función \textbf{SÍ es analítica}. De hecho, $f(z) = e^{-2z}$.
+
+\subsection*{c) $f(z) = e^x(\cos(y) - i\sin(y))$}
+
+Expresando la función:
+\begin{align*}
+f(z) &= e^x\cos(y) - ie^x\sin(y)
+\end{align*}
+
+Por lo tanto:
+\begin{align*}
+u(x,y) &= e^x\cos(y) \\
+v(x,y) &= -e^x\sin(y)
+\end{align*}
+
+Calculando las derivadas parciales:
+\begin{align*}
+\frac{\partial u}{\partial x} &= e^x\cos(y) \\
+\frac{\partial u}{\partial y} &= -e^x\sin(y) \\
+\frac{\partial v}{\partial x} &= -e^x\sin(y) \\
+\frac{\partial v}{\partial y} &= -e^x\cos(y)
+\end{align*}
+
+Verificando las ecuaciones de Cauchy-Riemann:
+\begin{align*}
+\frac{\partial u}{\partial x} = e^x\cos(y) &\neq \frac{\partial v}{\partial y} = -e^x\cos(y) \quad \text{(no se cumple)} \\
+\frac{\partial u}{\partial y} = -e^x\sin(y) &= -\frac{\partial v}{\partial x} = e^x\sin(y) \quad \text{(tampoco se cumple)}
+\end{align*}
+
+\textbf{Conclusión:} La función \textbf{NO es analítica} porque no cumple las ecuaciones de Cauchy-Riemann.
+
+\subsection*{d) $f(z) = \text{Re}(z^2) - i\text{Im}(z^2)$}
+
+Primero calculamos $z^2$:
+\begin{align*}
+z^2 &= (x + iy)^2 = x^2 + 2ixy - y^2 = (x^2 - y^2) + i(2xy)
+\end{align*}
+
+Por lo tanto:
+\begin{align*}
+\text{Re}(z^2) &= x^2 - y^2 \\
+\text{Im}(z^2) &= 2xy
+\end{align*}
+
+Entonces:
+\begin{align*}
+f(z) &= (x^2 - y^2) - i(2xy) = x^2 - y^2 - 2ixy
+\end{align*}
+
+Por lo tanto:
+\begin{align*}
+u(x,y) &= x^2 - y^2 \\
+v(x,y) &= -2xy
+\end{align*}
+
+Calculando las derivadas parciales:
+\begin{align*}
+\frac{\partial u}{\partial x} &= 2x \\
+\frac{\partial u}{\partial y} &= -2y \\
+\frac{\partial v}{\partial x} &= -2y \\
+\frac{\partial v}{\partial y} &= -2x
+\end{align*}
+
+Verificando las ecuaciones de Cauchy-Riemann:
+\begin{align*}
+\frac{\partial u}{\partial x} = 2x &\neq \frac{\partial v}{\partial y} = -2x \quad \text{(no se cumple)} \\
+\frac{\partial u}{\partial y} = -2y &= -\frac{\partial v}{\partial x} = 2y \quad \text{(tampoco se cumple)}
+\end{align*}
+
+\textbf{Conclusión:} La función \textbf{NO es analítica} porque no cumple las ecuaciones de Cauchy-Riemann.
+
+\subsection*{e) $f(z) = \frac{1}{z - z^5}$}
+
+Esta función es un cociente de funciones analíticas. La función $g(z) = z - z^5$ es analítica (es un polinomio), por lo que $f(z) = 1/g(z)$ es analítica en todos los puntos donde $g(z) \neq 0$.
+
+Resolviendo $z - z^5 = 0$:
+\begin{align*}
+z - z^5 &= 0 \\
+z(1 - z^4) &= 0 \\
+z(1 - z^2)(1 + z^2) &= 0 \\
+z(1 - z)(1 + z)(1 - iz)(1 + iz) &= 0
+\end{align*}
+
+Por lo tanto, $f(z)$ no está definida (y por tanto no es analítica) en:
+$$z = 0, \quad z = 1, \quad z = -1, \quad z = i, \quad z = -i$$
+
+\textbf{Conclusión:} La función \textbf{SÍ es analítica} en todo el plano complejo excepto en los puntos donde $z - z^5 = 0$, es decir, en $\mathbb{C} \setminus \{0, 1, -1, i, -i\}$.
+
+\subsection*{f) $f(z) = \ln|z| + i\text{Arg}(z)$}
+
+Esta es la función logaritmo complejo: $f(z) = \text{Log}(z)$.
+
+En coordenadas polares, si $z = re^{i\theta}$ con $r > 0$ y $-\pi < \theta \leq \pi$:
+\begin{align*}
+f(z) &= \ln r + i\theta
+\end{align*}
+
+En coordenadas cartesianas:
+\begin{align*}
+u(x,y) &= \ln\sqrt{x^2 + y^2} = \frac{1}{2}\ln(x^2 + y^2) \\
+v(x,y) &= \text{Arg}(z) = \arctan\left(\frac{y}{x}\right) \quad \text{(con el cuadrante apropiado)}
+\end{align*}
+
+Calculando las derivadas parciales (para $x \neq 0$):
+\begin{align*}
+\frac{\partial u}{\partial x} &= \frac{x}{x^2 + y^2} \\
+\frac{\partial u}{\partial y} &= \frac{y}{x^2 + y^2} \\
+\frac{\partial v}{\partial x} &= -\frac{y}{x^2 + y^2} \\
+\frac{\partial v}{\partial y} &= \frac{x}{x^2 + y^2}
+\end{align*}
+
+Verificando las ecuaciones de Cauchy-Riemann:
+\begin{align*}
+\frac{\partial u}{\partial x} = \frac{x}{x^2 + y^2} &= \frac{\partial v}{\partial y} = \frac{x}{x^2 + y^2} \quad \checkmark \\
+\frac{\partial u}{\partial y} = \frac{y}{x^2 + y^2} &= -\frac{\partial v}{\partial x} = \frac{y}{x^2 + y^2} \quad \checkmark
+\end{align*}
+
+Las derivadas parciales son continuas excepto en $z = 0$ y en el corte de rama (eje real negativo).
+
+\textbf{Conclusión:} La función \textbf{SÍ es analítica} en su dominio, es decir, en $\mathbb{C} \setminus \{z \in \mathbb{R} : z \leq 0\}$ (todo el plano complejo excepto el eje real no positivo, donde está el corte de rama).
+
+\subsection*{g) $f(z) = \cos(x)\cosh(y) - i\sin(x)\sinh(y)$}
+
+Expresando la función:
+\begin{align*}
+f(z) &= \cos(x)\cosh(y) - i\sin(x)\sinh(y)
+\end{align*}
+
+Por lo tanto:
+\begin{align*}
+u(x,y) &= \cos(x)\cosh(y) \\
+v(x,y) &= -\sin(x)\sinh(y)
+\end{align*}
+
+Calculando las derivadas parciales:
+\begin{align*}
+\frac{\partial u}{\partial x} &= -\sin(x)\cosh(y) \\
+\frac{\partial u}{\partial y} &= \cos(x)\sinh(y) \\
+\frac{\partial v}{\partial x} &= -\cos(x)\sinh(y) \\
+\frac{\partial v}{\partial y} &= -\sin(x)\cosh(y)
+\end{align*}
+
+Verificando las ecuaciones de Cauchy-Riemann:
+\begin{align*}
+\frac{\partial u}{\partial x} = -\sin(x)\cosh(y) &= \frac{\partial v}{\partial y} = -\sin(x)\cosh(y) \quad \checkmark \\
+\frac{\partial u}{\partial y} = \cos(x)\sinh(y) &= -\frac{\partial v}{\partial x} = \cos(x)\sinh(y) \quad \checkmark
+\end{align*}
+
+Las derivadas parciales son continuas en todo el plano complejo.
+
+\textbf{Conclusión:} La función \textbf{SÍ es analítica}. De hecho, $f(z) = \cos(z)$.
+
+\section*{Resumen}
+
+Las funciones analíticas son:
+\begin{itemize}
+\item \textbf{b)} $f(z) = e^{-2x}(\cos(2y) - i\sin(2y)) = e^{-2z}$
+\item \textbf{e)} $f(z) = \frac{1}{z - z^5}$ (analítica excepto en $z = 0, 1, -1, i, -i$)
+\item \textbf{f)} $f(z) = \ln|z| + i\text{Arg}(z) = \text{Log}(z)$ (analítica en su dominio)
+\item \textbf{g)} $f(z) = \cos(x)\cosh(y) - i\sin(x)\sinh(y) = \cos(z)$
+\end{itemize}
+
+Las funciones que \textbf{NO son analíticas} son:
+\begin{itemize}
+\item \textbf{a)} $f(z) = izz^*$
+\item \textbf{c)} $f(z) = e^x(\cos(y) - i\sin(y))$
+\item \textbf{d)} $f(z) = \text{Re}(z^2) - i\text{Im}(z^2)$
+\end{itemize}
+
+\newpage
+\section*{6. Para qué valores de $a$ y $b$ las siguientes funciones son armónicas. Encuentre la conjugada}
+
+\subsection*{a) $u = e^{\pi x}\cos(ay)$}
+
+Una función $u(x,y)$ es \textbf{armónica} si satisface la \textbf{ecuación de Laplace}:
+$$\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0$$
+
+Calculando las derivadas parciales de $u = e^{\pi x}\cos(ay)$:
+
+Primeras derivadas:
+\begin{align*}
+\frac{\partial u}{\partial x} &= \pi e^{\pi x}\cos(ay) \\
+\frac{\partial u}{\partial y} &= -a e^{\pi x}\sin(ay)
+\end{align*}
+
+Segundas derivadas:
+\begin{align*}
+\frac{\partial^2 u}{\partial x^2} &= \pi^2 e^{\pi x}\cos(ay) \\
+\frac{\partial^2 u}{\partial y^2} &= -a^2 e^{\pi x}\cos(ay)
+\end{align*}
+
+Aplicando la ecuación de Laplace:
+\begin{align*}
+\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} &= 0 \\
+\pi^2 e^{\pi x}\cos(ay) - a^2 e^{\pi x}\cos(ay) &= 0 \\
+(\pi^2 - a^2) e^{\pi x}\cos(ay) &= 0
+\end{align*}
+
+Para que esto se cumpla para todo $x$ y $y$ (excepto donde $\cos(ay) = 0$), necesitamos:
+$$\pi^2 - a^2 = 0 \quad \Rightarrow \quad a^2 = \pi^2 \quad \Rightarrow \quad a = \pm \pi$$
+
+\textbf{Conclusión:} La función $u$ es armónica cuando $a = \pi$ o $a = -\pi$.
+
+\subsubsection*{Encontrando la conjugada armónica}
+
+Para encontrar la conjugada armónica $v(x,y)$ tal que $f(z) = u + iv$ sea analítica, usamos las \textbf{ecuaciones de Cauchy-Riemann}:
+\begin{align}
+\frac{\partial u}{\partial x} &= \frac{\partial v}{\partial y} \label{CR1-harm} \\
+\frac{\partial u}{\partial y} &= -\frac{\partial v}{\partial x} \label{CR2-harm}
+\end{align}
+
+Con $a = \pi$ (el caso $a = -\pi$ es similar):
+\begin{align*}
+u(x,y) &= e^{\pi x}\cos(\pi y) \\
+\frac{\partial u}{\partial x} &= \pi e^{\pi x}\cos(\pi y) \\
+\frac{\partial u}{\partial y} &= -\pi e^{\pi x}\sin(\pi y)
+\end{align*}
+
+De la ecuación (\ref{CR1-harm}):
+$$\frac{\partial v}{\partial y} = \frac{\partial u}{\partial x} = \pi e^{\pi x}\cos(\pi y)$$
+
+Integrando con respecto a $y$:
+\begin{align*}
+v(x,y) &= \int \pi e^{\pi x}\cos(\pi y) \, dy \\
+       &= \pi e^{\pi x} \int \cos(\pi y) \, dy \\
+       &= \pi e^{\pi x} \cdot \frac{\sin(\pi y)}{\pi} + g(x) \\
+       &= e^{\pi x}\sin(\pi y) + g(x)
+\end{align*}
+
+donde $g(x)$ es una función que depende solo de $x$.
+
+Ahora usamos la ecuación (\ref{CR2-harm}):
+$$\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
+
+Calculando $\frac{\partial v}{\partial x}$:
+\begin{align*}
+\frac{\partial v}{\partial x} &= \pi e^{\pi x}\sin(\pi y) + g'(x)
+\end{align*}
+
+Entonces:
+\begin{align*}
+-\pi e^{\pi x}\sin(\pi y) &= -\left(\pi e^{\pi x}\sin(\pi y) + g'(x)\right) \\
+-\pi e^{\pi x}\sin(\pi y) &= -\pi e^{\pi x}\sin(\pi y) - g'(x) \\
+g'(x) &= 0
+\end{align*}
+
+Por lo tanto, $g(x) = C$ (constante). Tomando $C = 0$ (la conjugada está determinada hasta una constante aditiva):
+$$v(x,y) = e^{\pi x}\sin(\pi y)$$
+
+Verificando que $v$ también sea armónica:
+\begin{align*}
+\frac{\partial^2 v}{\partial x^2} &= \pi^2 e^{\pi x}\sin(\pi y) \\
+\frac{\partial^2 v}{\partial y^2} &= -\pi^2 e^{\pi x}\sin(\pi y) \\
+\frac{\partial^2 v}{\partial x^2} + \frac{\partial^2 v}{\partial y^2} &= 0 \quad \checkmark
+\end{align*}
+
+\textbf{Resultado final:}
+\begin{itemize}
+\item La función $u = e^{\pi x}\cos(ay)$ es armónica cuando $a = \pm \pi$.
+\item La conjugada armónica es $v(x,y) = e^{\pi x}\sin(\pi y)$ (para $a = \pi$).
+\item La función analítica correspondiente es:
+$$f(z) = u + iv = e^{\pi x}\cos(\pi y) + ie^{\pi x}\sin(\pi y) = e^{\pi x}e^{i\pi y} = e^{\pi(x + iy)} = e^{\pi z}$$
+\end{itemize}
+
+\subsection*{b) $u = \cos(ax)\cosh(2y)$}
+
+Calculando las derivadas parciales de $u = \cos(ax)\cosh(2y)$:
+
+Primeras derivadas:
+\begin{align*}
+\frac{\partial u}{\partial x} &= -a\sin(ax)\cosh(2y) \\
+\frac{\partial u}{\partial y} &= 2\cos(ax)\sinh(2y)
+\end{align*}
+
+Segundas derivadas:
+\begin{align*}
+\frac{\partial^2 u}{\partial x^2} &= -a^2\cos(ax)\cosh(2y) \\
+\frac{\partial^2 u}{\partial y^2} &= 4\cos(ax)\cosh(2y)
+\end{align*}
+
+Aplicando la ecuación de Laplace:
+\begin{align*}
+\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} &= 0 \\
+-a^2\cos(ax)\cosh(2y) + 4\cos(ax)\cosh(2y) &= 0 \\
+(-a^2 + 4)\cos(ax)\cosh(2y) &= 0
+\end{align*}
+
+Para que esto se cumpla para todo $x$ y $y$, necesitamos:
+$$-a^2 + 4 = 0 \quad \Rightarrow \quad a^2 = 4 \quad \Rightarrow \quad a = \pm 2$$
+
+\textbf{Conclusión:} La función $u$ es armónica cuando $a = 2$ o $a = -2$.
+
+\subsubsection*{Encontrando la conjugada armónica}
+
+Con $a = 2$:
+\begin{align*}
+u(x,y) &= \cos(2x)\cosh(2y) \\
+\frac{\partial u}{\partial x} &= -2\sin(2x)\cosh(2y) \\
+\frac{\partial u}{\partial y} &= 2\cos(2x)\sinh(2y)
+\end{align*}
+
+De la ecuación de Cauchy-Riemann $\frac{\partial v}{\partial y} = \frac{\partial u}{\partial x}$:
+$$\frac{\partial v}{\partial y} = -2\sin(2x)\cosh(2y)$$
+
+Integrando con respecto a $y$:
+\begin{align*}
+v(x,y) &= \int -2\sin(2x)\cosh(2y) \, dy \\
+       &= -2\sin(2x) \int \cosh(2y) \, dy \\
+       &= -2\sin(2x) \cdot \frac{\sinh(2y)}{2} + g(x) \\
+       &= -\sin(2x)\sinh(2y) + g(x)
+\end{align*}
+
+De la ecuación de Cauchy-Riemann $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$:
+$$\frac{\partial v}{\partial x} = -2\cos(2x)\sinh(2y) + g'(x)$$
+
+Calculando $\frac{\partial v}{\partial x}$ directamente:
+\begin{align*}
+\frac{\partial v}{\partial x} &= -2\cos(2x)\sinh(2y) + g'(x)
+\end{align*}
+
+Comparando:
+\begin{align*}
+2\cos(2x)\sinh(2y) &= -(-2\cos(2x)\sinh(2y) + g'(x)) \\
+2\cos(2x)\sinh(2y) &= 2\cos(2x)\sinh(2y) - g'(x) \\
+g'(x) &= 0
+\end{align*}
+
+Por lo tanto, $g(x) = C$. Tomando $C = 0$:
+$$v(x,y) = -\sin(2x)\sinh(2y)$$
+
+\textbf{Resultado final:}
+\begin{itemize}
+\item La función $u = \cos(ax)\cosh(2y)$ es armónica cuando $a = \pm 2$.
+\item La conjugada armónica es $v(x,y) = -\sin(2x)\sinh(2y)$ (para $a = 2$).
+\item La función analítica correspondiente es:
+$$f(z) = u + iv = \cos(2x)\cosh(2y) - i\sin(2x)\sinh(2y) = \cos(2z)$$
+\end{itemize}
+
+\subsection*{c) $u = \cosh(ax)\cos(y)$}
+
+Calculando las derivadas parciales de $u = \cosh(ax)\cos(y)$:
+
+Primeras derivadas:
+\begin{align*}
+\frac{\partial u}{\partial x} &= a\sinh(ax)\cos(y) \\
+\frac{\partial u}{\partial y} &= -\cosh(ax)\sin(y)
+\end{align*}
+
+Segundas derivadas:
+\begin{align*}
+\frac{\partial^2 u}{\partial x^2} &= a^2\cosh(ax)\cos(y) \\
+\frac{\partial^2 u}{\partial y^2} &= -\cosh(ax)\cos(y)
+\end{align*}
+
+Aplicando la ecuación de Laplace:
+\begin{align*}
+\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} &= 0 \\
+a^2\cosh(ax)\cos(y) - \cosh(ax)\cos(y) &= 0 \\
+(a^2 - 1)\cosh(ax)\cos(y) &= 0
+\end{align*}
+
+Para que esto se cumpla para todo $x$ y $y$, necesitamos:
+$$a^2 - 1 = 0 \quad \Rightarrow \quad a^2 = 1 \quad \Rightarrow \quad a = \pm 1$$
+
+\textbf{Conclusión:} La función $u$ es armónica cuando $a = 1$ o $a = -1$.
+
+\subsubsection*{Encontrando la conjugada armónica}
+
+Con $a = 1$:
+\begin{align*}
+u(x,y) &= \cosh(x)\cos(y) \\
+\frac{\partial u}{\partial x} &= \sinh(x)\cos(y) \\
+\frac{\partial u}{\partial y} &= -\cosh(x)\sin(y)
+\end{align*}
+
+De la ecuación de Cauchy-Riemann $\frac{\partial v}{\partial y} = \frac{\partial u}{\partial x}$:
+$$\frac{\partial v}{\partial y} = \sinh(x)\cos(y)$$
+
+Integrando con respecto a $y$:
+\begin{align*}
+v(x,y) &= \int \sinh(x)\cos(y) \, dy \\
+       &= \sinh(x) \int \cos(y) \, dy \\
+       &= \sinh(x)\sin(y) + g(x)
+\end{align*}
+
+De la ecuación de Cauchy-Riemann $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$:
+$$\frac{\partial v}{\partial x} = \cosh(x)\sin(y) + g'(x)$$
+
+Calculando $\frac{\partial v}{\partial x}$ directamente:
+\begin{align*}
+\frac{\partial v}{\partial x} &= \cosh(x)\sin(y) + g'(x)
+\end{align*}
+
+Comparando:
+\begin{align*}
+-\cosh(x)\sin(y) &= -(\cosh(x)\sin(y) + g'(x)) \\
+-\cosh(x)\sin(y) &= -\cosh(x)\sin(y) - g'(x) \\
+g'(x) &= 0
+\end{align*}
+
+Por lo tanto, $g(x) = C$. Tomando $C = 0$:
+$$v(x,y) = \sinh(x)\sin(y)$$
+
+\textbf{Resultado final:}
+\begin{itemize}
+\item La función $u = \cosh(ax)\cos(y)$ es armónica cuando $a = \pm 1$.
+\item La conjugada armónica es $v(x,y) = \sinh(x)\sin(y)$ (para $a = 1$).
+\item La función analítica correspondiente es:
+$$f(z) = u + iv = \cosh(x)\cos(y) + i\sinh(x)\sin(y) = \cosh(z)$$
+\end{itemize}
+
+\subsection*{d) $u = ax^3 + bxy$}
+
+Calculando las derivadas parciales de $u = ax^3 + bxy$:
+
+Primeras derivadas:
+\begin{align*}
+\frac{\partial u}{\partial x} &= 3ax^2 + by \\
+\frac{\partial u}{\partial y} &= bx
+\end{align*}
+
+Segundas derivadas:
+\begin{align*}
+\frac{\partial^2 u}{\partial x^2} &= 6ax \\
+\frac{\partial^2 u}{\partial y^2} &= 0
+\end{align*}
+
+Aplicando la ecuación de Laplace:
+\begin{align*}
+\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} &= 0 \\
+6ax + 0 &= 0 \\
+6ax &= 0
+\end{align*}
+
+Para que esto se cumpla para todo $x$ y $y$, necesitamos:
+$$6a = 0 \quad \Rightarrow \quad a = 0$$
+
+No hay restricción sobre $b$ de la ecuación de Laplace, pero debemos verificar si podemos encontrar una conjugada armónica.
+
+Con $a = 0$:
+\begin{align*}
+u(x,y) &= bxy \\
+\frac{\partial u}{\partial x} &= by \\
+\frac{\partial u}{\partial y} &= bx
+\end{align*}
+
+De la ecuación de Cauchy-Riemann $\frac{\partial v}{\partial y} = \frac{\partial u}{\partial x}$:
+$$\frac{\partial v}{\partial y} = by$$
+
+Integrando con respecto a $y$:
+\begin{align*}
+v(x,y) &= \int by \, dy \\
+       &= \frac{b}{2}y^2 + g(x)
+\end{align*}
+
+De la ecuación de Cauchy-Riemann $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$:
+$$\frac{\partial v}{\partial x} = g'(x)$$
+
+Comparando:
+\begin{align*}
+bx &= -g'(x) \\
+g'(x) &= -bx
+\end{align*}
+
+Integrando:
+$$g(x) = -\frac{b}{2}x^2 + C$$
+
+Tomando $C = 0$:
+$$v(x,y) = \frac{b}{2}y^2 - \frac{b}{2}x^2 = \frac{b}{2}(y^2 - x^2)$$
+
+Verificando que $v$ también sea armónica:
+\begin{align*}
+\frac{\partial^2 v}{\partial x^2} &= -b \\
+\frac{\partial^2 v}{\partial y^2} &= b \\
+\frac{\partial^2 v}{\partial x^2} + \frac{\partial^2 v}{\partial y^2} &= -b + b = 0 \quad \checkmark
+\end{align*}
+
+\textbf{Resultado final:}
+\begin{itemize}
+\item La función $u = ax^3 + bxy$ es armónica cuando $a = 0$ (no hay restricción sobre $b$).
+\item La conjugada armónica es $v(x,y) = \frac{b}{2}(y^2 - x^2)$.
+\item La función analítica correspondiente es:
+$$f(z) = u + iv = bxy + i\frac{b}{2}(y^2 - x^2) = -\frac{ib}{2}(x^2 - y^2 + 2ixy) = -\frac{ib}{2}z^2$$
+\end{itemize}
+
+\end{document}
+

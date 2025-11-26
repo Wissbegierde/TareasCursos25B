@@ -1,0 +1,420 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\title{Ejercicios Funciones Complejas}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Ejercicio 4 (1.1.8 Vol. 2)}
+
+\textbf{Encuentre las derivadas:}
+
+\subsection*{a) $f(z) = \frac{z - i}{z + i}$, encontrar $f'(i)$}
+
+Aplicando la regla del cociente:
+\begin{align*}
+f'(z) &= \frac{(z + i)(1) - (z - i)(1)}{(z + i)^2} \\
+      &= \frac{z + i - z + i}{(z + i)^2} \\
+      &= \frac{2i}{(z + i)^2}
+\end{align*}
+
+Evaluando en $z = i$:
+\begin{align*}
+f'(i) &= \frac{2i}{(i + i)^2} \\
+      &= \frac{2i}{(2i)^2} \\
+      &= \frac{2i}{4i^2} \\
+      &= \frac{2i}{-4} \\
+      &= -\frac{i}{2}
+\end{align*}
+
+Por lo tanto, $f'(i) = -\frac{i}{2}$.
+
+\subsection*{b) $f(z) = (z - 4i)^8$, encontrar $f'(3 + 4i)$}
+
+Aplicando la regla de la cadena:
+\begin{align*}
+f'(z) &= 8(z - 4i)^7 \cdot 1 \\
+      &= 8(z - 4i)^7
+\end{align*}
+
+Evaluando en $z = 3 + 4i$:
+\begin{align*}
+f'(3 + 4i) &= 8(3 + 4i - 4i)^7 \\
+           &= 8(3)^7 \\
+           &= 8 \cdot 2187 \\
+           &= 17496
+\end{align*}
+
+Por lo tanto, $f'(3 + 4i) = 17496$.
+
+\subsection*{c) $f(z) = \frac{1.5z + 2i}{3iz - 4}$, encontrar $f'(z)$ para todo $z$}
+
+Aplicando la regla del cociente:
+\begin{align*}
+f'(z) &= \frac{(3iz - 4)(1.5) - (1.5z + 2i)(3i)}{(3iz - 4)^2} \\
+      &= \frac{1.5(3iz - 4) - 3i(1.5z + 2i)}{(3iz - 4)^2} \\
+      &= \frac{4.5iz - 6 - 4.5iz - 6i^2}{(3iz - 4)^2} \\
+      &= \frac{4.5iz - 6 - 4.5iz + 6}{(3iz - 4)^2} \\
+      &= \frac{0}{(3iz - 4)^2} \\
+      &= 0
+\end{align*}
+
+Por lo tanto, $f'(z) = 0$ para todo $z$ tal que $3iz - 4 \neq 0$ (es decir, para $z \neq -\frac{4}{3i} = \frac{4i}{3}$).
+
+\subsection*{d) $f(z) = i(1 - z)^n$, encontrar $f'(0)$}
+
+Aplicando la regla de la cadena:
+\begin{align*}
+f'(z) &= i \cdot n(1 - z)^{n-1} \cdot (-1) \\
+      &= -in(1 - z)^{n-1}
+\end{align*}
+
+Evaluando en $z = 0$:
+\begin{align*}
+f'(0) &= -in(1 - 0)^{n-1} \\
+      &= -in(1)^{n-1} \\
+      &= -in
+\end{align*}
+
+Por lo tanto, $f'(0) = -in$.
+
+\subsection*{e) $f(z) = (iz^3 + 3z^2)^3$, encontrar $f'(2i)$}
+
+Aplicando la regla de la cadena:
+\begin{align*}
+f'(z) &= 3(iz^3 + 3z^2)^2 \cdot \frac{d}{dz}(iz^3 + 3z^2) \\
+      &= 3(iz^3 + 3z^2)^2 \cdot (3iz^2 + 6z) \\
+      &= 3(iz^3 + 3z^2)^2(3iz^2 + 6z)
+\end{align*}
+
+Evaluando en $z = 2i$:
+\begin{align*}
+(2i)^2 &= 4i^2 = -4 \\
+(2i)^3 &= 8i^3 = -8i \\
+iz^3 + 3z^2 &= i(-8i) + 3(-4) = -8i^2 - 12 = 8 - 12 = -4 \\
+3iz^2 + 6z &= 3i(-4) + 6(2i) = -12i + 12i = 0
+\end{align*}
+
+Por lo tanto:
+\begin{align*}
+f'(2i) &= 3(-4)^2 \cdot 0 \\
+       &= 3 \cdot 16 \cdot 0 \\
+       &= 0
+\end{align*}
+
+Por lo tanto, $f'(2i) = 0$.
+
+\subsection*{f) $f(z) = \frac{z^3}{(z + i)^3}$, encontrar $f'(i)$}
+
+Aplicando la regla del cociente:
+\begin{align*}
+f'(z) &= \frac{(z + i)^3 \cdot 3z^2 - z^3 \cdot 3(z + i)^2}{(z + i)^6} \\
+      &= \frac{3z^2(z + i)^3 - 3z^3(z + i)^2}{(z + i)^6} \\
+      &= \frac{3z^2(z + i)^2[(z + i) - z]}{(z + i)^6} \\
+      &= \frac{3z^2(z + i)^2 \cdot i}{(z + i)^6} \\
+      &= \frac{3iz^2}{(z + i)^4}
+\end{align*}
+
+Evaluando en $z = i$:
+\begin{align*}
+f'(i) &= \frac{3i(i)^2}{(i + i)^4} \\
+      &= \frac{3i(-1)}{(2i)^4} \\
+      &= \frac{-3i}{16i^4} \\
+      &= \frac{-3i}{16} \\
+      &= -\frac{3i}{16}
+\end{align*}
+
+Por lo tanto, $f'(i) = -\frac{3i}{16}$.
+
+\newpage
+\section*{Ejercicio 6 (1.6.7)}
+
+\textbf{Demuestre que:}
+
+\subsection*{a) $\text{Log}(-ie) = 1 - \frac{\pi}{2}i$}
+
+Recordemos que el logaritmo complejo se define como:
+$$\text{Log}(z) = \ln|z| + i\text{Arg}(z)$$
+
+donde $\text{Arg}(z)$ es el argumento principal de $z$ con $-\pi < \text{Arg}(z) \leq \pi$.
+
+Para $z = -ie$, tenemos:
+\begin{align*}
+-ie &= -i \cdot e = e(-i) = e(0 - i) = e \cdot e^{-i\pi/2}
+\end{align*}
+
+En forma cartesiana: $-ie = 0 - ie$.
+
+Calculando el módulo:
+$$|-ie| = |e(-i)| = e|i| = e \cdot 1 = e$$
+
+Calculando el argumento:
+$$\text{Arg}(-ie) = \text{Arg}(-i) = -\frac{\pi}{2}$$
+
+Por lo tanto:
+\begin{align*}
+\text{Log}(-ie) &= \ln|e| + i\left(-\frac{\pi}{2}\right) \\
+               &= \ln(e) - \frac{\pi}{2}i \\
+               &= 1 - \frac{\pi}{2}i \quad \checkmark
+\end{align*}
+
+\subsection*{b) $\text{Log}(1 - i) = \frac{1}{2}\ln(2) - \frac{\pi}{4}i$}
+
+Para $z = 1 - i$, tenemos:
+$$|1 - i| = \sqrt{1^2 + (-1)^2} = \sqrt{2}$$
+
+El argumento:
+$$\text{Arg}(1 - i) = \arctan\left(\frac{-1}{1}\right) = -\frac{\pi}{4}$$
+
+Por lo tanto:
+\begin{align*}
+\text{Log}(1 - i) &= \ln|1 - i| + i\text{Arg}(1 - i) \\
+                 &= \ln(\sqrt{2}) + i\left(-\frac{\pi}{4}\right) \\
+                 &= \frac{1}{2}\ln(2) - \frac{\pi}{4}i \quad \checkmark
+\end{align*}
+
+\subsection*{c) $\text{Log}(e) = 1 + 2n\pi i$}
+
+Para $z = e$ (número real positivo), tenemos:
+$$|e| = e$$
+
+El argumento principal:
+$$\text{Arg}(e) = 0$$
+
+Sin embargo, el logaritmo complejo general (con todas las ramas) es:
+$$\text{Log}(e) = \ln(e) + i(\text{Arg}(e) + 2n\pi) = 1 + i(0 + 2n\pi) = 1 + 2n\pi i$$
+
+donde $n \in \mathbb{Z}$.
+
+Por lo tanto:
+$$\text{Log}(e) = 1 + 2n\pi i \quad \checkmark$$
+
+\subsection*{d) $\text{Log}(i) = \left(2n + \frac{1}{2}\right)\pi i$}
+
+Para $z = i$, tenemos:
+$$|i| = 1$$
+
+El argumento principal:
+$$\text{Arg}(i) = \frac{\pi}{2}$$
+
+El logaritmo complejo general es:
+\begin{align*}
+\text{Log}(i) &= \ln|i| + i(\text{Arg}(i) + 2n\pi) \\
+             &= \ln(1) + i\left(\frac{\pi}{2} + 2n\pi\right) \\
+             &= 0 + i\left(\frac{\pi}{2} + 2n\pi\right) \\
+             &= i\left(\frac{1 + 4n}{2}\pi\right) \\
+             &= \left(2n + \frac{1}{2}\right)\pi i \quad \checkmark
+\end{align*}
+
+donde $n \in \mathbb{Z}$.
+
+\newpage
+\section*{Ejercicio 10 (1.6.7)}
+
+Las funciones hiperbólicas se definen como:
+\begin{align*}
+\cosh(x) &= \frac{e^x + e^{-x}}{2} \\
+\sinh(x) &= \frac{e^x - e^{-x}}{2}
+\end{align*}
+
+Y las demás funciones hiperbólicas:
+\begin{align*}
+\tanh(x) &= \frac{\sinh(x)}{\cosh(x)} \\
+\text{sech}(x) &= \frac{1}{\cosh(x)} \\
+\text{csch}(x) &= \frac{1}{\sinh(x)} \\
+\coth(x) &= \frac{1}{\tanh(x)}
+\end{align*}
+
+\subsection*{a) Muestre las siguientes equivalencias:}
+
+\subsubsection*{$\cosh(x) = \cos(ix)$}
+
+Usando la definición de $\cosh$ y la fórmula de Euler:
+\begin{align*}
+\cosh(x) &= \frac{e^x + e^{-x}}{2} \\
+         &= \frac{e^{ix \cdot (-i)} + e^{-ix \cdot (-i)}}{2} \\
+         &= \frac{e^{-ix^2} + e^{ix^2}}{2}
+\end{align*}
+
+Mejor, usando $e^{ix} = \cos(x) + i\sin(x)$ y $e^{-ix} = \cos(x) - i\sin(x)$:
+\begin{align*}
+\cos(ix) &= \frac{e^{i(ix)} + e^{-i(ix)}}{2} \\
+        &= \frac{e^{-x} + e^{x}}{2} \\
+        &= \frac{e^x + e^{-x}}{2} \\
+        &= \cosh(x) \quad \checkmark
+\end{align*}
+
+\subsubsection*{$i\sinh(x) = \sin(ix)$}
+
+\begin{align*}
+\sin(ix) &= \frac{e^{i(ix)} - e^{-i(ix)}}{2i} \\
+         &= \frac{e^{-x} - e^{x}}{2i} \\
+         &= \frac{-(e^{x} - e^{-x})}{2i} \\
+         &= \frac{e^{x} - e^{-x}}{2} \cdot \frac{-1}{i} \\
+         &= \sinh(x) \cdot \frac{-i}{i^2} \\
+         &= \sinh(x) \cdot \frac{-i}{-1} \\
+         &= i\sinh(x) \quad \checkmark
+\end{align*}
+
+\subsubsection*{$\cos(x) = \cosh(ix)$}
+
+\begin{align*}
+\cosh(ix) &= \frac{e^{ix} + e^{-ix}}{2} \\
+         &= \frac{(\cos(x) + i\sin(x)) + (\cos(x) - i\sin(x))}{2} \\
+         &= \frac{2\cos(x)}{2} \\
+         &= \cos(x) \quad \checkmark
+\end{align*}
+
+\subsubsection*{$i\sin(x) = \sinh(ix)$}
+
+\begin{align*}
+\sinh(ix) &= \frac{e^{ix} - e^{-ix}}{2} \\
+          &= \frac{(\cos(x) + i\sin(x)) - (\cos(x) - i\sin(x))}{2} \\
+          &= \frac{2i\sin(x)}{2} \\
+          &= i\sin(x) \quad \checkmark
+\end{align*}
+
+\subsection*{b) Muestre las siguientes identidades:}
+
+\subsubsection*{$\cosh^2(x) - \sinh^2(x) = 1$}
+
+Usando las definiciones:
+\begin{align*}
+\cosh^2(x) - \sinh^2(x) &= \left(\frac{e^x + e^{-x}}{2}\right)^2 - \left(\frac{e^x - e^{-x}}{2}\right)^2 \\
+                        &= \frac{(e^x + e^{-x})^2 - (e^x - e^{-x})^2}{4} \\
+                        &= \frac{e^{2x} + 2 + e^{-2x} - (e^{2x} - 2 + e^{-2x})}{4} \\
+                        &= \frac{e^{2x} + 2 + e^{-2x} - e^{2x} + 2 - e^{-2x}}{4} \\
+                        &= \frac{4}{4} \\
+                        &= 1 \quad \checkmark
+\end{align*}
+
+\subsubsection*{$\text{sech}^2(x) = 1 - \tanh^2(x)$}
+
+Primero, demostremos que $\tanh^2(x) = 1 - \text{sech}^2(x)$:
+\begin{align*}
+\tanh^2(x) &= \frac{\sinh^2(x)}{\cosh^2(x)} \\
+           &= \frac{\cosh^2(x) - 1}{\cosh^2(x)} \quad \text{(usando } \cosh^2 - \sinh^2 = 1\text{)} \\
+           &= 1 - \frac{1}{\cosh^2(x)} \\
+           &= 1 - \text{sech}^2(x)
+\end{align*}
+
+Por lo tanto:
+$$\text{sech}^2(x) = 1 - \tanh^2(x) \quad \checkmark$$
+
+\subsubsection*{$\cosh(2x) = \cosh^2(x) + \sinh^2(x)$}
+
+Usando las definiciones:
+\begin{align*}
+\cosh(2x) &= \frac{e^{2x} + e^{-2x}}{2}
+\end{align*}
+
+Por otro lado:
+\begin{align*}
+\cosh^2(x) + \sinh^2(x) &= \left(\frac{e^x + e^{-x}}{2}\right)^2 + \left(\frac{e^x - e^{-x}}{2}\right)^2 \\
+                        &= \frac{(e^x + e^{-x})^2 + (e^x - e^{-x})^2}{4} \\
+                        &= \frac{e^{2x} + 2 + e^{-2x} + e^{2x} - 2 + e^{-2x}}{4} \\
+                        &= \frac{2e^{2x} + 2e^{-2x}}{4} \\
+                        &= \frac{e^{2x} + e^{-2x}}{2} \\
+                        &= \cosh(2x) \quad \checkmark
+\end{align*}
+
+\subsection*{c) Resuelva las siguientes ecuaciones hiperbólicas:}
+
+\subsubsection*{$\cosh(x) - 5\sinh(x) - 5 = 0$}
+
+Usando las definiciones:
+\begin{align*}
+\cosh(x) - 5\sinh(x) - 5 &= 0 \\
+\frac{e^x + e^{-x}}{2} - 5 \cdot \frac{e^x - e^{-x}}{2} - 5 &= 0 \\
+\frac{e^x + e^{-x} - 5e^x + 5e^{-x}}{2} - 5 &= 0 \\
+\frac{-4e^x + 6e^{-x}}{2} &= 5 \\
+-4e^x + 6e^{-x} &= 10 \\
+-4e^x + \frac{6}{e^x} &= 10
+\end{align*}
+
+Multiplicando por $e^x$:
+\begin{align*}
+-4e^{2x} + 6 &= 10e^x \\
+-4e^{2x} - 10e^x + 6 &= 0 \\
+4e^{2x} + 10e^x - 6 &= 0
+\end{align*}
+
+Haciendo $u = e^x$:
+\begin{align*}
+4u^2 + 10u - 6 &= 0 \\
+2u^2 + 5u - 3 &= 0
+\end{align*}
+
+Resolviendo la ecuación cuadrática:
+$$u = \frac{-5 \pm \sqrt{25 + 24}}{4} = \frac{-5 \pm 7}{4}$$
+
+Por lo tanto:
+\begin{align*}
+u_1 &= \frac{2}{4} = \frac{1}{2} \quad \Rightarrow \quad e^x = \frac{1}{2} \quad \Rightarrow \quad x = \ln\left(\frac{1}{2}\right) = -\ln(2) \\
+u_2 &= \frac{-12}{4} = -3 \quad \Rightarrow \quad e^x = -3 \quad \text{(no tiene solución real)}
+\end{align*}
+
+\textbf{Solución:} $x = -\ln(2)$
+
+\subsubsection*{$2\cosh(4x) - 8\cosh(2x) + 5 = 0$}
+
+Usando la identidad $\cosh(2x) = 2\cosh^2(x) - 1$, tenemos:
+$$\cosh(4x) = 2\cosh^2(2x) - 1 = 2(2\cosh^2(x) - 1)^2 - 1$$
+
+Pero es más simple usar directamente:
+\begin{align*}
+2\cosh(4x) - 8\cosh(2x) + 5 &= 0 \\
+2 \cdot \frac{e^{4x} + e^{-4x}}{2} - 8 \cdot \frac{e^{2x} + e^{-2x}}{2} + 5 &= 0 \\
+e^{4x} + e^{-4x} - 4(e^{2x} + e^{-2x}) + 5 &= 0
+\end{align*}
+
+Haciendo $u = e^{2x}$, entonces $e^{4x} = u^2$ y $e^{-4x} = \frac{1}{u^2}$, $e^{-2x} = \frac{1}{u}$:
+\begin{align*}
+u^2 + \frac{1}{u^2} - 4\left(u + \frac{1}{u}\right) + 5 &= 0 \\
+u^2 + \frac{1}{u^2} - 4u - \frac{4}{u} + 5 &= 0
+\end{align*}
+
+Multiplicando por $u^2$:
+\begin{align*}
+u^4 + 1 - 4u^3 - 4u + 5u^2 &= 0 \\
+u^4 - 4u^3 + 5u^2 - 4u + 1 &= 0
+\end{align*}
+
+Factorizando (notando que es $(u^2 - 2u + 1)^2 = (u - 1)^4$):
+$$(u - 1)^4 = 0$$
+
+Por lo tanto: $u = 1$, es decir, $e^{2x} = 1$, entonces $2x = 0$, así que $x = 0$.
+
+\textbf{Solución:} $x = 0$
+
+\subsubsection*{$\cosh(x) = \sinh(x) + 2\text{sech}(x)$}
+
+\begin{align*}
+\cosh(x) &= \sinh(x) + 2\text{sech}(x) \\
+\cosh(x) - \sinh(x) &= \frac{2}{\cosh(x)} \\
+(\cosh(x) - \sinh(x))\cosh(x) &= 2
+\end{align*}
+
+Notando que $\cosh(x) - \sinh(x) = e^{-x}$:
+\begin{align*}
+e^{-x}\cosh(x) &= 2 \\
+e^{-x} \cdot \frac{e^x + e^{-x}}{2} &= 2 \\
+\frac{1 + e^{-2x}}{2} &= 2 \\
+1 + e^{-2x} &= 4 \\
+e^{-2x} &= 3 \\
+-2x &= \ln(3) \\
+x &= -\frac{1}{2}\ln(3)
+\end{align*}
+
+\textbf{Solución:} $x = -\frac{1}{2}\ln(3)$
+
+\end{document}
+
